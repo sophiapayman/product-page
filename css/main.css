@@ -16,8 +16,21 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 45%;
 }
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.feature {
+    grid-column: span 3;
+}
+
+
 
 .wrapper {
   max-width: 1400px;
