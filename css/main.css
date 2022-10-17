@@ -22,14 +22,28 @@ img {
 .images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  grid-template-areas:
+    "feature feature feature"
+    "img2 img3 img4";
 
 }
 
 .feature {
-    grid-column: span 3;
+    grid-area: feature;
 }
 
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
 
 
 .wrapper {
@@ -37,6 +51,21 @@ img {
   margin: 0 auto;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Baskervville', serif;
+}
+
+ul {
+  font-family: 'Baskervville', serif;
+}
 header {
   display: flex;
   justify-content: space-between;
