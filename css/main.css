@@ -22,6 +22,7 @@ img {
 .images {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 1em;
   grid-template-areas:
     "feature feature feature"
@@ -66,6 +67,11 @@ p {
 ul {
   font-family: 'Baskervville', serif;
 }
+
+blockquote {
+  display: grid;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -96,7 +102,17 @@ footer {
 
 
 /* Default styling for all screens ends here */
+@media only screen and (min-width: 38em) {
 
+  .images {
+    gridtemplate coloumns:
+    grid-template-areas:
+    "feature img2"
+    "feature img3"
+    "feature img4"
+  }
+
+}
 /* Add media query for tablet */
 
 
